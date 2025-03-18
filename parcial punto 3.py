@@ -11,4 +11,4 @@ for i in m:
         print(f"El número {i} es par")
     else:
         print(f"El número {i} es impar")
-print(f"La cantidad de cifras del número ingresado es de:",cifras) #se imprime si es par o impar, y cuantas cifras tiene
+print("La cantidad de cifras del número ingresado es de:",cifras) #se imprime si es par o impar, y cuantas cifras tiene
