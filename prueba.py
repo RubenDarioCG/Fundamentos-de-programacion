@@ -27,7 +27,7 @@ INTERVALO_CREACION = 6000
 MAX_ENEMIGOS = 20
 BITS = []
 TIEMPO_ULTIMO_BIT = pygame.time.get_ticks()
-INTERVALO_BITS = 4000  # Reducido para disparar con más frecuencia
+INTERVALO_BITS = 4500  # Reducido para disparar con más frecuencia
 
 vida = 100
 ultimo_daño = pygame.time.get_ticks()
@@ -146,6 +146,7 @@ while True:
 
         tiempo_actual = pygame.time.get_ticks()
         if tiempo_actual - ULTIMA_CREACION >= INTERVALO_CREACION:
+            crear_enemigo()
             crear_enemigo()
             ULTIMA_CREACION = tiempo_actual
 
